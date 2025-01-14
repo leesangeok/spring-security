@@ -37,4 +37,13 @@ public class Rq {
 
         return opActor.get();
     }
+
+    public Member getActorByUsername(String username) {
+        return memberService.findByUsername(username).get();
+    }
+
+    public void setLogin(String username) {
+
+
+    }
 }
